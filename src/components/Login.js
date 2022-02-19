@@ -3,16 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from 'react-router-dom';
 import { login } from "../actions/auth";
 
-const required = (value) => {
-    if (!value) {
-      return (
-        <div className="alert alert-danger" role="alert">
-          This field is required!
-        </div>
-      );
-    }
-};
-
 const Login = (props) => {
     const form = useRef();
     const checkBtn = useRef();
